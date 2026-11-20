@@ -1,10 +1,36 @@
-# Localink
+<p align="center">
+  <img src="public/localink-icon.png" width="112" alt="Localink logo" />
+</p>
+
+<h1 align="center">Localink</h1>
+
+<p align="center">
+  <strong>Lightweight peer-to-peer file and text transfer over your local network.</strong><br />
+  No account, no cloud, no chat app required.
+</p>
+
+<p align="center">
+  <a href="https://github.com/CatKeee/locallink/releases/latest"><img src="https://img.shields.io/github/v/release/CatKeee/locallink?style=flat-square&label=release" alt="Latest release" /></a>
+  <a href="https://github.com/CatKeee/locallink/releases/latest"><img src="https://img.shields.io/badge/platform-macOS%20Apple%20Silicon%20%7C%20Windows%2010%2F11-blue?style=flat-square" alt="macOS Apple Silicon and Windows 10/11" /></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/github/license/CatKeee/locallink?style=flat-square" alt="MIT License" /></a>
+  <a href="https://tauri.app"><img src="https://img.shields.io/badge/built%20with-Tauri%202-24C8DB?style=flat-square&logo=tauri&logoColor=white" alt="Built with Tauri 2" /></a>
+</p>
 
 Localink is a lightweight local-network transfer tool for macOS and Windows. Send files or a quick piece of text directly between two computers — no account, no cloud, and no chat app required.
 
 Open the app and nearby devices appear automatically. Approve a connection, then exchange messages and files in a simple chat-like session.
 
 > Built for trusted local networks. Transfers use direct peer-to-peer TCP and are not additionally encrypted.
+
+## Preview
+
+| Searching for nearby devices (light) | Searching for nearby devices (dark) |
+| --- | --- |
+| <img src="docs/screenshots/nearby-light.png" alt="Searching for nearby devices in light mode" width="100%" /> | <img src="docs/screenshots/nearby-dark.png" alt="Searching for nearby devices in dark mode" width="100%" /> |
+
+| Available devices | Chat and file transfer |
+| --- | --- |
+| <img src="docs/screenshots/devices-light.png" alt="An available MacBook on the local network" width="100%" /> | <img src="docs/screenshots/chat-light.png" alt="Chat session with text messages and transferred files" width="100%" /> |
 
 ## Download
 
@@ -120,6 +146,10 @@ pnpm tauri build
 
 ```text
 .
+├── docs/
+│   └── screenshots/         # README preview images
+├── public/
+│   └── localink-icon.png    # Logo used in the README
 ├── src/
 │   ├── components/          # App components and shadcn/ui primitives
 │   ├── hooks/               # Tauri event bridge and state
